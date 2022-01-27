@@ -52,12 +52,10 @@ theme:
 extra:
   alternate:
     - name: English
-      # link: /MocapForAll-Manual/en/ 
-      link: /testmkdoc/en/ 
+      link: /MocapForAll-Manual/en/ 
       lang: en
     - name: 日本語
-      # link: /MocapForAll-Manual/ja/
-      link: /testmkdoc/ja/
+      link: /MocapForAll-Manual/ja/
       lang: ja
   analytics:
     provider: google
