@@ -1,0 +1,121 @@
+site_name: MocapForAll Manual
+site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/
+site_author: Kenji Asaba
+site_description: Official documentation of MocapForAll, a Windows application that captures motion of a person with multiple webcams. This page explains how to set it up and use it with VR and game engines.
+copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
+
+site_dir: ../docs/en
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: M PLUS 1
+    code: M PLUS 1 Code
+  language: en
+  favicon: images/favicon.png
+  logo: images/logo.png
+  features:
+    - navigation.instant
+    - navigation.tracking    
+    # - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    
+extra:
+  alternate:
+    - name: English
+      # link: /MocapForAll-Manual/en/ 
+      link: /testmkdoc/en/ 
+      lang: en
+    - name: 日本語
+      # link: /MocapForAll-Manual/ja/
+      link: /testmkdoc/ja/
+      lang: ja
+  analytics:
+    provider: google
+    property: UA-2709176-10
+  social:
+    - icon: fontawesome/solid/home
+      link: https://vrlab.akiya-souken.co.jp/
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/Akiya_Souken_VR
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/VvkHcdueUW
+    - icon: fontawesome/brands/github 
+      link: https://github.com/Akiya-Research-Institute
+    - icon: fontawesome/brands/steam
+      link: https://store.steampowered.com/app/1759710/MocapForAll/
+    - icon: fontawesome/solid/store-alt
+      link: https://akiya-souken.booth.pm/
+  # generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.details
+
+nav:
+  - index.md
+  - How to install:
+    - how-to-install/install-mocapforall.md
+    - how-to-install/install-tensorrt.md
+  - How to capture:
+    - how-to-capture/get-cameras.md
+    - Calibrate cameras:
+      - how-to-capture/calibrate-cameras/what-is-camera-calibration.md
+      - how-to-capture/calibrate-cameras/prepare-markers.md
+      - how-to-capture/calibrate-cameras/connect-cameras.md
+      - how-to-capture/calibrate-cameras/execute-calibration.md
+    - Adjust settings:
+      - how-to-capture/adjust-settings/adjust-scales.md
+      - how-to-capture/adjust-settings/adjust-animation.md
+      - how-to-capture/adjust-settings/optimize-performance.md
+  - How to export:
+    - how-to-export/to-steamvr.md
+    - how-to-export/to-game-engines.md
+    - how-to-export/to-vmc-marionette.md
+    - how-to-export/to-bvh-files.md
+    - how-to-export/to-shared-memory.md
+  - Other settings:
+    - other-settings/capture-hand-and-face.md
+    - other-settings/capture-from-recorded-video.md
+    - other-settings/index.md
+  - faq.md
+  - acknowledgement.md
