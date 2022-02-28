@@ -19,15 +19,18 @@
 
 #### 安い
 予算が限られているインディーズでの製作活動、教育目的や社内での利用などに選択肢として加えることができます。	
+
 ## MocapForAllでできること
-- キャプチャ結果をVMTプロトコル(※1) および [VMCプロトコル](https://protocol.vmc.info/) でネットワーク上に(※2)リアルタイムで出力することができます。
+- キャプチャ結果をVMTプロトコル(※1) および [VMCプロトコル](https://protocol.vmc.info/)(※2) でネットワーク上に(※3)リアルタイムで出力することができます。
 - キャプチャ結果をBVH形式のファイルに保存することができます。
 - キャプチャ結果を共有メモリにリアルタイムで出力することができます。
 
 !!! Note
     ※1 ここでの「VMTプロトコル」とは、[Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/) の通信で使用されるメッセージのフォーマットを指します。Virtual Motion Trackerの公式HPでは「VMTプロトコル」という呼称は用いられていませんが、MocapForAllでは便宜上「VMTプロトコル」という呼称を使用しています。  
 
-    ※2 VMTプロトコルもVMCプロトコルも、UDP/OpenSound Controlにより通信を行います。
+    ※2 VMCプロトコルは、[VirtualMotionCapture](https://vmc.info/)に代表されるアプリケーションでの通信に用いられるメッセージのフォーマットです。MocapForAllを含むVMCプロトコルに対応したその他のアプリケーション間での通信には、VirtualMotionCaptureそれ自体は必須ではないことに注意してください。
+
+    ※3 VMTプロトコルもVMCプロトコルも、UDP/OpenSound Controlにより通信を行います。
 
 
 これらにより下記に述べるような利用が可能であるとともに、いずれの出力仕様も公開されたものであるため、自身で受信側のプログラムを製作することも可能です。
@@ -48,15 +51,14 @@ Unreal Engine 4, Unreal Engine 5, Unityへキャプチャ結果を送信し、�
 
 ### VMCプロトコルによるアプリ連携
 
-VMCプロトコルを介して、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。
+VMCプロトコルを用いて、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。
 
-- [VirtualMotionCapture](https://vmc.info/)へのトラッカーの送信
 - [VSeeFace](https://www.vseeface.icu/)へのボーンの送信、VSeeFaceからの表情モーフの受信
 - [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)へのボーンと表情モーフの送信
 - [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)へのボーンと表情モーフの送信
 - [VMC4B](https://tonimono.booth.pm/items/3432915)へのボーンの送信
+- [VirtualMotionCapture](https://vmc.info/)へのトラッカーの送信
 
 ### BVH形式での書き出し
 
 BVH形式ファイルでキャプチャ結果を保存することができます。Blender等で利用できます。
-You can save the captured motion as BVH files. It can be used with Blender etc.

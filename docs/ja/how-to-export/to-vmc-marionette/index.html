@@ -837,15 +837,20 @@
               
                 
                 
-                <h1 id="vmc">VMC互換アプリへの連携</h1>
+                <h1 id="vmc">VMCプロトコル対応アプリへの連携</h1>
 <p>VMCプロトコルを介して、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。</p>
 <ul>
-<li><a href="https://vmc.info/">VirtualMotionCapture</a>へのトラッカーの送信</li>
 <li><a href="https://www.vseeface.icu/">VSeeFace</a>へのボーンの送信、VSeeFaceからの表情モーフの受信</li>
 <li><a href="https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity">EVMC4U</a>へのボーンと表情モーフの送信</li>
 <li><a href="https://github.com/HAL9HARUKU/VMC4UE">VMC4UE</a>へのボーンと表情モーフの送信</li>
 <li><a href="https://tonimono.booth.pm/items/3432915">VMC4B</a>へのボーンの送信</li>
+<li><a href="https://vmc.info/">VirtualMotionCapture</a>へのトラッカーの送信</li>
 </ul>
+<div class="admonition question">
+<p class="admonition-title">VMCが必要?</p>
+<p>ここで説明している「VMCプロトコル」でのアプリケーション間の通信には、「VMC」それ自体は基本的に不要です。<br />
+（VirtualMotionCaptureは、VMCプロトコルでの通信に対応したアプリケーションの<strong>代表例の一つ</strong>であると捉えてください）</p>
+</div>
 <h2 id="vrm">VRMモデル読み込み</h2>
 <ul>
 <li>キャプチャを停止します。</li>
@@ -891,6 +896,8 @@
 </li>
 </ul>
 <p>受信した表情モーフデータは、<a href="#_1">送信設定</a>がされていれば、そのまま送信されます。</p>
+                
+                  
                 
               
               

@@ -6,11 +6,15 @@ title: Export to VMC marionette
 
 You can send the captured motion to various applications via VMC protocol. The following are confirmed to work:
 
-- Sending tracker to [VirtualMotionCapture](https://vmc.info/)
 - Sending bones to [VSeeFace](https://www.vseeface.icu/), and receiving facial expression morphs from VSeeFace
 - Sending bones and facial expression morphs to [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)
 - Sending bones and facial expression morphs to [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)
 - Sending bones to [VMC4B](https://tonimono.booth.pm/items/3432915)
+- Sending tracker to [VirtualMotionCapture](https://vmc.info/)
+
+!!! Question "Do I need VMC?"
+    "VMC" itself is not required for communication between applications which send/accept "VMC protocol".  
+    (VirtualMotionCapture is one example of an application that supports communication via the VMC protocol.)
 
 ## Load VRM models
 

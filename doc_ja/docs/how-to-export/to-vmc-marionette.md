@@ -1,12 +1,20 @@
-# VMC互換アプリへの連携
+---
+title: VMC互換アプリへの連携
+---
+
+# VMCプロトコル対応アプリへの連携
 
 VMCプロトコルを介して、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。
 
-- [VirtualMotionCapture](https://vmc.info/)へのトラッカーの送信
 - [VSeeFace](https://www.vseeface.icu/)へのボーンの送信、VSeeFaceからの表情モーフの受信
 - [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)へのボーンと表情モーフの送信
 - [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)へのボーンと表情モーフの送信
 - [VMC4B](https://tonimono.booth.pm/items/3432915)へのボーンの送信
+- [VirtualMotionCapture](https://vmc.info/)へのトラッカーの送信
+
+!!! Question "VMCが必要?"
+    ここで説明している「VMCプロトコル」でのアプリケーション間の通信には、「VMC」それ自体は基本的に不要です。  
+    （VirtualMotionCaptureは、VMCプロトコルでの通信に対応したアプリケーションの**代表例の一つ**であると捉えてください）
 
 ## VRMモデル読み込み
 

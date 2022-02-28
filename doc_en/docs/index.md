@@ -23,14 +23,16 @@ For examples, it runs at
 ### Cheap
 An option for projects with limited budgets, such as indie games, indie films, or education.
 ## What you can do with MocapForAll
-- You can output captured motion to the network via VMT protocol(\*1) and [VMC protocol](https://protocol.vmc.info/) in real time(\*2). 
+- You can output captured motion to the network(\*1) via VMT protocol(\*2) and [VMC protocol](https://protocol.vmc.info/english)(\*3) in real time. 
 - You can save the captured motion to files in BVH format.
 - You can output captured motion to the shared memory in real time.
 
 !!! Note
-    (\*1) The "VMT protocol" here refers to the [message format](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/api/#osc-protocol-osc) used in the communication of [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/). The official HP of Virtual Motion Tracker does not use the word "VMT protocol", but MocapForAll uses the word "VMT protocol" for convenience.  
-    (\*2) Both VMT protocol and VMC protocol use UDP/OpenSound Control.
+    (\*1) Both VMT protocol and VMC protocol use UDP/OpenSound Control.
 
+    (\*2) "VMT protocol" here refers to the [message format](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/api/#osc-protocol-osc) used in the communication of [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/). The official HP of Virtual Motion Tracker does not use the word "VMT protocol", but MocapForAll uses the word "VMT protocol" for convenience.  
+
+    (\*3) "VMC protocol" is a message format used for communication between applications such as [VirtualMotionCapture](https://vmc.info/). Note that VirtualMotionCapture itself is not required for other compatible apps to communicate with each other using VMC protocol.
 
 By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
 
