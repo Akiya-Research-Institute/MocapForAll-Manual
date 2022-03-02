@@ -16,13 +16,8 @@ Plugins for Unreal Engine 4, Unreal Engine 5, and Unity are available [here](htt
 - [Manual of the receiver plugin for UE5](https://github.com/Akiya-Research-Institute/MocapForAll-Receiver-Plugin-for-UE5/wiki)
 
 ### How to use Unity plugin
-- Set `Settings > Data export > Destination IP address for VMT and VMC` as follows
-    - If the destination is the same PC: `127.0.0.1`
-    - If the destination is another PC: `IP address of the destination PC`
-        - You can check it by typing `ipconfig /all` in the command prompt
-- Set one of the followings:
-    - Turn on `Settings > Data export > VMT protocol > Send bones` and set the port according to the destination app
-    - Turn on `Settings > Data export > VMT protocol > Send tracking points` and set the port according to the destination app
+- [Readme of the receiver plugin for Unity](https://github.com/Akiya-Research-Institute/MocapForAll-Receiver-Plugin-for-Unity/blob/main/README.md)
+- [Readme of the receiver plugin for Unity, using shared memory](https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity/blob/main/README.md)
 
 ## By VMC4UE or EVMC4U
 - As described in [To vmc marionette](../to-vmc-marionette) section, set MocapForAll settings.

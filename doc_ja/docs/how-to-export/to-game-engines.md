@@ -12,12 +12,8 @@ Unreal Engine 4, Unreal Engine 5, Unityでデータを受信するための[プ�
 - [UE5版データ受信プラグインの使い方](https://github.com/Akiya-Research-Institute/MocapForAll-Receiver-Plugin-for-UE5/wiki)
 
 ### Unity向けプラグインの使い方
-  - 「Settings > Data export > Destination IP address for VMT and VMC」を下記の通り設定します
-      - 送信先が同じPCの場合：「127.0.0.1」
-      - 送信先が別のPCの場合： 送信先のPCのIPアドレス（コマンドプロンプトを開いて、"ipconfig /all" で確認できます）
-  - 下記のいずれかを設定します。
-      - 「Settings > Data export > VMT protocol > Send bones」をオンにし、ポートを送信先に合わせて設定します
-      - 「Settings > Data export > VMT protocol > Send tracking points」をオンにし、ポートを送信先に合わせて設定します
+- [Unity版データ受信プラグインの使い方](https://github.com/Akiya-Research-Institute/MocapForAll-Receiver-Plugin-for-Unity/blob/main/README.md)
+- [Unity版データ受信プラグインの使い方(共有メモリ使用)](https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity/blob/main/README.md)
 
 ## VMC4UE、EVMC4Uによる連携
 - [VMC互換アプリへの連携](../to-vmc-marionette)に記載の通り、MocapForAllの設定を行います。
