@@ -80,17 +80,17 @@ SteamVRでトラッキングされているHMDおよびコントローラの座�
         - MocapForAllで
             - 「Settings > Data export > VMT protocol > Send tracking points > Tracking points to be sent」の下の「Head」をオンにします。
             - 「Settings > Data export > VMT protocol > Send tracking points > As relative position to HMD」をオフにします。
-        - 自分の目線の高さと、「Head」の仮想トラッカーの高さが一致するように、「Settings > Coordinates > Scale > Upper body」および「Settings > Coordinates > Scale > Lower body」の値を設定します。「Upper body」と「Lower body」は基本的に同じ値にします。
+        - 自分の目線の高さと、「Head」の仮想トラッカーの高さが一致するように、「Settings > Coordinates > Scales > Upper body」および「Settings > Coordinates > Scale > Lower body」の値を設定します。「Upper body」と「Lower body」は基本的に同じ値にします。
     
     - 回転の調整
         - MocapForAllで
             - 「Settings > Data export > VMT protocol > Send tracking points > Tracking points to be sent」の下の「Feet」をオンにします。
             - 「Settings > Data export > VMT protocol > Send tracking points > As relative position to HMD」をオンにします。
-        - 自分の足を前後に動かし、その動く向きが足元の「Feet」の仮想トラッカーの動く向きと一致するように、「Settings > Coordinates > Coord. rotation」の値を設定します。
+        - 自分の足を前後に動かし、その動く向きが足元の「Feet」の仮想トラッカーの動く向きと一致するように、「Settings > Coordinates > Orientation offset」の値を設定します。
     
     - 位置の調整
         - MocapForAllで
             - 「Settings > Data export > VMT protocol > Send tracking points > Tracking points to be sent」の下の「Feet」をオンにします。
             - 「Settings > Data export > VMT protocol > Send tracking points > As relative position to HMD」をオフにします。
 
-        - 自分の足の位置と「Feet」の仮想トラッカーの位置が一致するよう、「Settings > Coordinates > Origin position」の値を設定します。
+        - 自分の足の位置と「Feet」の仮想トラッカーの位置が一致するよう、「Settings > Coordinates > Position offset」の値を設定します。

@@ -83,17 +83,17 @@ The coordinate of the HMD tracked by SteamVR and the coordinate of the body posi
         - In MocapForAll,
             - Turn on **`Head`** under `Settings > Data export > VMT protocol > Send tracking points > Tracking points to be sent`
             - Tunr **off** `Settings > Data export > VMT protocol > Send tracking points > As relative position to HMD`
-        - Set the values of `Settings > Coordinates > Scale > Upper body` and `Lower body` so that the height of your eye level matches the height of the `Head` virtual tracker. `Upper body` and `Lower body` scales should basically have the same value.
+        - Set the values of `Settings > Coordinates > Scales > Upper body` and `Lower body` so that the height of your eye level matches the height of the `Head` virtual tracker. `Upper body` and `Lower body` scales should basically have the same value.
         
     - Adjust the orientation
         - In MocapForAll,
             - Turn on **`Feet`** under `Settings > Data export > VMT protocol > Send tracking points > Tracking points to be sent`
             - Tunr **on** `Settings > Data export > VMT protocol > Send tracking points > As relative position to HMD`
-        - Move your foot back and forth and set the value of `Settings > Coordinates > Coord. rotation` so that the direction of the movement of `Foot` virtual tracker matches the direction of the actual movement of your foot.
+        - Move your foot back and forth and set the value of `Settings > Coordinates > Orientation offset` so that the direction of the movement of `Foot` virtual tracker matches the direction of the actual movement of your foot.
         
     - Adjust the position
 
         - In MocapForAll,
             - Turn on **`Feet`** under `Settings > Data export > VMT protocol > Send tracking points > Tracking points to be sent`
             - Tunr **off** `Settings > Data export > VMT protocol > Send tracking points > As relative position to HMD`
-    - Set the value of `Settings > Coordinates > Origin position` so that the position of your feet matches the position of the virtual tracker of `Feet`.
+    - Set the value of `Settings > Coordinates > Position offset` so that the position of your feet matches the position of the virtual tracker of `Feet`.

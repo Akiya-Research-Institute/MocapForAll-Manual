@@ -15,12 +15,12 @@
 
 腰、股関節、膝、足の位置に影響します。また、体全体の位置（root位置）もこのスケールに従います。
 
-- キャラクターが常にしゃがんでいる場合： 「Settings > Coordinates > Scale > Lower body」の値を増やします。
-- キャラクターが宙に浮いている場合： 「Settings > Coordinates > Scale > Lower body」の値を減らします。
+- キャラクターが常にしゃがんでいる場合： 「Settings > Coordinates > Scales > Lower body」の値を増やします。
+- キャラクターが宙に浮いている場合： 「Settings > Coordinates > Scales > Lower body」の値を減らします。
 
 ## 上半身のスケール
 
 胸、首、頭、肩、肘、手、指の位置に影響します。
 
-- キャラクターの肩が常に下を向いている場合： 「Settings > Coordinates > Scale > Upper body」の値を増やします。
-- キャラクターの肩が常に上を向いている場合： 「Settings > Coordinates > Scale > Upper body」の値を減らします。
+- キャラクターの肩が常に下を向いている場合： 「Settings > Coordinates > Scales > Upper body」の値を増やします。
+- キャラクターの肩が常に上を向いている場合： 「Settings > Coordinates > Scales > Upper body」の値を減らします。

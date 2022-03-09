@@ -15,12 +15,12 @@ By observing the captured result, adjust the scales as shown below to animate th
 
 Affects to pelvis, hips, knees, feet, as well as the root position of the whole movement.
 
-- If the character is always crunching, increase the value at `Settings > Coordinates > Scale > Lower body`.
-- If the character is floating in the air, decrease the value at `Settings > Coordinates > Scale > Lower body`.
+- If the character is always crunching, increase the value at `Settings > Coordinates > Scales > Lower body`.
+- If the character is floating in the air, decrease the value at `Settings > Coordinates > Scales > Lower body`.
 
 ## Upper body scale
 
 Affects to chest, neck, head, shoulders, elbows, hands, fingers.
 
-- If the character's shoulder is always facing down,  increase the value at `Settings > Coordinates > Scale > Upper body`.
-- If the character's shoulder is always facing up,  decrease the value at `Settings > Coordinates > Scale > Upper body`.
+- If the character's shoulder is always facing down,  increase the value at `Settings > Coordinates > Scales > Upper body`.
+- If the character's shoulder is always facing up,  decrease the value at `Settings > Coordinates > Scales > Upper body`.
