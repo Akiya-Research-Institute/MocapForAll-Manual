@@ -110,6 +110,7 @@ nav:
     - how-to-export/to-game-engines.md
     - how-to-export/to-vmc-marionette.md
     - how-to-export/to-bvh-files.md
+    - how-to-export/to-fbx-files.md
     - how-to-export/to-shared-memory.md
   - その他の設定:
     - other-settings/capture-hand-and-face.md

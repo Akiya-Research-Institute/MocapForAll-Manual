@@ -1,33 +1,33 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Official documentation of MocapForAll, a Windows application that captures motion of a person with multiple webcams. This page explains how to set it up and use it with VR and game engines.">
+        <meta name="description" content="複数のWebカメラで人物の動きをキャプチャするWindowsアプリケーション、MocapForAllの公式ドキュメントです。設定方法からVRやゲームエンジンでの使用方法まで解説しています。">
       
       
       
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/MocapForAll-Manual/acknowledgement/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/MocapForAll-Manual/how-to-export/to-fbx-files/">
       
-      <link rel="icon" href="../images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>Acknowledgements - MocapForAll Manual</title>
+        <title>FBX形式での書き出し - MocapForAll マニュアル</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -42,7 +42,7 @@
     
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
       
@@ -74,7 +74,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -84,8 +84,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#acknowledgements" class="md-skip">
-          Skip to content
+        <a href="#fbx" class="md-skip">
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -96,10 +96,10 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MocapForAll Manual" class="md-header__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="MocapForAll マニュアル" class="md-header__button md-logo" aria-label="MocapForAll マニュアル" data-md-component="logo">
       
-  <img src="../images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,13 +109,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            MocapForAll Manual
+            MocapForAll マニュアル
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Acknowledgements
+              FBX形式での書き出し
             
           </span>
         </div>
@@ -198,7 +198,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -209,7 +209,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
@@ -221,7 +221,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -255,14 +255,14 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MocapForAll Manual" class="md-nav__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
+    <a href="../.." title="MocapForAll マニュアル" class="md-nav__button md-logo" aria-label="MocapForAll マニュアル" data-md-component="logo">
       
-  <img src="../images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
-    MocapForAll Manual
+    MocapForAll マニュアル
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -275,8 +275,8 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        What is MocapForAll?
+      <a href="../.." class="md-nav__link">
+        MocapForAllって何？
       </a>
     </li>
   
@@ -299,14 +299,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          How to install
+          インストール方法
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="How to install" data-md-level="1">
+      <nav class="md-nav" aria-label="インストール方法" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          How to install
+          インストール方法
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -316,8 +316,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-install/install-mocapforall/" class="md-nav__link">
-        Install MocapForAll
+      <a href="../../how-to-install/install-mocapforall/" class="md-nav__link">
+        MocapForAllのインストール
       </a>
     </li>
   
@@ -330,8 +330,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-install/install-tensorrt/" class="md-nav__link">
-        Install TensorRT
+      <a href="../../how-to-install/install-tensorrt/" class="md-nav__link">
+        TensorRTのインストール
       </a>
     </li>
   
@@ -361,14 +361,14 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          How to capture
+          キャプチャー方法
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="How to capture" data-md-level="1">
+      <nav class="md-nav" aria-label="キャプチャー方法" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          How to capture
+          キャプチャー方法
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -378,8 +378,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/get-cameras/" class="md-nav__link">
-        Get cameras
+      <a href="../../how-to-capture/get-cameras/" class="md-nav__link">
+        カメラの用意
       </a>
     </li>
   
@@ -401,14 +401,14 @@
       
       
         <label class="md-nav__link" for="__nav_3_2">
-          Calibrate cameras
+          カメラ校正
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Calibrate cameras" data-md-level="2">
+      <nav class="md-nav" aria-label="カメラ校正" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
-          Calibrate cameras
+          カメラ校正
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -418,8 +418,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/calibrate-cameras/what-is-camera-calibration/" class="md-nav__link">
-        What is camera calibration?
+      <a href="../../how-to-capture/calibrate-cameras/what-is-camera-calibration/" class="md-nav__link">
+        カメラ校正とは？
       </a>
     </li>
   
@@ -432,8 +432,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/calibrate-cameras/prepare-markers/" class="md-nav__link">
-        Prepare markers
+      <a href="../../how-to-capture/calibrate-cameras/prepare-markers/" class="md-nav__link">
+        マーカの準備
       </a>
     </li>
   
@@ -446,8 +446,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/calibrate-cameras/connect-cameras/" class="md-nav__link">
-        Connect cameras
+      <a href="../../how-to-capture/calibrate-cameras/connect-cameras/" class="md-nav__link">
+        カメラの接続
       </a>
     </li>
   
@@ -460,8 +460,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/calibrate-cameras/execute-calibration/" class="md-nav__link">
-        Execute calibration
+      <a href="../../how-to-capture/calibrate-cameras/execute-calibration/" class="md-nav__link">
+        カメラ校正の実施
       </a>
     </li>
   
@@ -490,14 +490,14 @@
       
       
         <label class="md-nav__link" for="__nav_3_3">
-          Adjust settings
+          設定の調整
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Adjust settings" data-md-level="2">
+      <nav class="md-nav" aria-label="設定の調整" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
-          Adjust settings
+          設定の調整
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -507,8 +507,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/adjust-settings/adjust-scales/" class="md-nav__link">
-        Adjust scales
+      <a href="../../how-to-capture/adjust-settings/adjust-scales/" class="md-nav__link">
+        スケールの調整
       </a>
     </li>
   
@@ -521,8 +521,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/adjust-settings/adjust-animation/" class="md-nav__link">
-        Adjust animation
+      <a href="../../how-to-capture/adjust-settings/adjust-animation/" class="md-nav__link">
+        動きの加工の調整
       </a>
     </li>
   
@@ -535,8 +535,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-capture/adjust-settings/optimize-performance/" class="md-nav__link">
-        Optimize performance
+      <a href="../../how-to-capture/adjust-settings/optimize-performance/" class="md-nav__link">
+        パフォーマンス最適化
       </a>
     </li>
   
@@ -562,25 +562,27 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
       
         <label class="md-nav__link" for="__nav_4">
-          How to export
+          エクスポート方法
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="How to export" data-md-level="1">
+      <nav class="md-nav" aria-label="エクスポート方法" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          How to export
+          エクスポート方法
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -590,8 +592,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-export/to-steamvr/" class="md-nav__link">
-        Export to SteamVR
+      <a href="../to-steamvr/" class="md-nav__link">
+        SteamVRへの連携
       </a>
     </li>
   
@@ -604,8 +606,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-export/to-game-engines/" class="md-nav__link">
-        Export to game engines
+      <a href="../to-game-engines/" class="md-nav__link">
+        ゲームエンジンへの連携
       </a>
     </li>
   
@@ -618,8 +620,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-export/to-vmc-marionette/" class="md-nav__link">
-        Export to VMC marionette
+      <a href="../to-vmc-marionette/" class="md-nav__link">
+        VMC互換アプリへの連携
       </a>
     </li>
   
@@ -632,9 +634,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-export/to-bvh-files/" class="md-nav__link">
-        Export to BVH files
+      <a href="../to-bvh-files/" class="md-nav__link">
+        BVH形式での書き出し
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FBX形式での書き出し
+      </a>
+      
     </li>
   
 
@@ -646,22 +672,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-export/to-fbx-files/" class="md-nav__link">
-        Export to FBX files
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-export/to-shared-memory/" class="md-nav__link">
-        Export to shared memory
+      <a href="../to-shared-memory/" class="md-nav__link">
+        共有メモリへの出力
       </a>
     </li>
   
@@ -691,14 +703,14 @@
       
       
         <label class="md-nav__link" for="__nav_5">
-          Other settings
+          その他の設定
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Other settings" data-md-level="1">
+      <nav class="md-nav" aria-label="その他の設定" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Other settings
+          その他の設定
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -708,8 +720,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../other-settings/capture-hand-and-face/" class="md-nav__link">
-        Capture hand and face
+      <a href="../../other-settings/capture-hand-and-face/" class="md-nav__link">
+        手と顔のキャプチャ
       </a>
     </li>
   
@@ -722,8 +734,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../other-settings/capture-from-recorded-video/" class="md-nav__link">
-        Capture from recorded video
+      <a href="../../other-settings/capture-from-recorded-video/" class="md-nav__link">
+        録画した動画からのキャプチャ
       </a>
     </li>
   
@@ -736,22 +748,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../other-settings/" class="md-nav__link">
-        Others
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../other-settings/use-as-dummy-hmd-and-controllers/" class="md-nav__link">
-        Use as dummy HMD and controllers
+      <a href="../../other-settings/" class="md-nav__link">
+        その他
       </a>
     </li>
   
@@ -772,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -785,21 +783,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Acknowledgements
+    <li class="md-nav__item">
+      <a href="../../acknowledgement/" class="md-nav__link">
+        謝辞
       </a>
-      
     </li>
   
 
@@ -817,8 +805,28 @@
               
                 
                 
-                <h1 id="acknowledgements">Acknowledgements</h1>
-<p>We express our sincere thanks to Gonzales kévin, "Raybox41130" for the French translation.</p>
+                <h1 id="fbx">FBX形式での書き出し</h1>
+<ul>
+<li>「Settings &gt; Data export &gt; Record to FBX file」を有効にします。</li>
+<li>「Start capture」をクリックすると、FBX形式でのデータ保存が開始されます。</li>
+<li>「Stop capture」をクリックすると、最終的なFBXファイルが生成されます。<ul>
+<li>無料試用版の場合は、300フレーム経過時点で自動的にFBXファイルが生成され、データ保存が停止されます。</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">ボーン構造はUE Mannequin準拠</p>
+<p>MocapForAll上でUE Mannequinモデルにアニメーションをリターゲットした上で、FBX形式でアニメーションをエクスポートするしくみとしています。<br />
+そのため、FBX形式でのデータ書き出し時は、自動的にUE Mannequinモデルに切り替わります。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">アニメーションは25fpsでベイクされます</p>
+<p>MocapForAll上で25fpsの固定フレームレートでベイクした後、アニメーションをFBXフォーマットで書き出します。  </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">顔の表情は書き出されません</p>
+<p>顔の表情のエクスポートはサポートされていません。</p>
+</div>
                 
               
               
@@ -835,23 +843,38 @@
         
 <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="フッター">
       
         
-        <a href="../faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ" rel="prev">
+        <a href="../to-bvh-files/" class="md-footer__link md-footer__link--prev" aria-label="前: BVH形式での書き出し" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Previous
+                前
               </span>
-              FAQ
+              BVH形式での書き出し
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../to-shared-memory/" class="md-footer__link md-footer__link--next" aria-label="次: 共有メモリへの出力" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                次
+              </span>
+              共有メモリへの出力
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
@@ -947,10 +970,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
