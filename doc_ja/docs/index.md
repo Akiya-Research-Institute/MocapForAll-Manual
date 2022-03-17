@@ -1,10 +1,10 @@
 # MocapForAllって何？
 
 ## 万人のためのモーションキャプチャシステム
+
 ![](images/App-Demo.gif){ loading=lazy }
 
-
-#### 特別な装置不要
+### 特別な装置不要
 
 下記のものがあれば、人の動きをキャプチャすることができます。
 
@@ -14,16 +14,21 @@
 
 ウェブカメラはウェブ会議で使用するような一般的なものを使用できます。またスマートフォンやタブレットをウェブカメラ化するアプリを利用することもできます。
 
-#### ミドルクラスのPCでリアルタイム
+### ミドルクラスのPCでリアルタイム
+
 例えば、専用のGPUを持たない Surface Pro 7 で 17fps前後、GTX1080Ti なら 30～60fpsで動作させることができます。
 
-#### 安い
+### 安い
+
 予算が限られているインディーズでの製作活動、教育目的や社内での利用などに選択肢として加えることができます。	
 
 ## MocapForAllでできること
+
 - キャプチャ結果をVMTプロトコル(※1) および [VMCプロトコル](https://protocol.vmc.info/)(※2) でネットワーク上に(※3)リアルタイムで出力することができます。
-- キャプチャ結果をBVH形式のファイルに保存することができます。
+- キャプチャ結果をBVH形式およびFBX形式のファイルに保存することができます。
 - キャプチャ結果を共有メモリにリアルタイムで出力することができます。
+
+![](images/App-Overview.png){ loading=lazy }
 
 !!! Note
     ※1 ここでの「VMTプロトコル」とは、[Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/) の通信で使用されるメッセージのフォーマットを指します。Virtual Motion Trackerの公式HPでは「VMTプロトコル」という呼称は用いられていませんが、MocapForAllでは便宜上「VMTプロトコル」という呼称を使用しています。  
@@ -32,10 +37,7 @@
 
     ※3 VMTプロトコルもVMCプロトコルも、UDP/OpenSound Controlにより通信を行います。
 
-
-これらにより下記に述べるような利用が可能であるとともに、いずれの出力仕様も公開されたものであるため、自身で受信側のプログラムを製作することも可能です。
-
-![](images/App-Overview.png){ loading=lazy }
+これらにより下記に述べるような利用が可能です。
 
 ### Virtual Motion TrackerによるSteamVR連携
 
@@ -53,12 +55,16 @@ Unreal Engine 4, Unreal Engine 5, Unityへキャプチャ結果を送信し、�
 
 VMCプロトコルを用いて、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。
 
+- [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)を使った、Unityへのボーンと表情モーフの送信
+- [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)を使った、Unreal Engineへのボーンと表情モーフの送信
+- [VMC4B](https://tonimono.booth.pm/items/3432915)を使った、Blenderへのボーンの送信
 - [VSeeFace](https://www.vseeface.icu/)へのボーンの送信、VSeeFaceからの表情モーフの受信
-- [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)へのボーンと表情モーフの送信
-- [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)へのボーンと表情モーフの送信
-- [VMC4B](https://tonimono.booth.pm/items/3432915)へのボーンの送信
 - [VirtualMotionCapture](https://vmc.info/)へのトラッカーの送信
 
-### BVH形式での書き出し
+### ファイルへの保存・利用
 
-BVH形式ファイルでキャプチャ結果を保存することができます。Blender等で利用できます。
+BVH形式およびFBX形式のファイルでキャプチャ結果のアニメーションを保存することができます。Blender等で利用できます。
+
+### 受信プログラムの作成
+
+FBXを除いて、出力仕様はいずれも公開されたものであるため、自身で受信側のプログラムを製作することも可能です。

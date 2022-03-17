@@ -373,8 +373,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bvh" class="md-nav__link">
-    BVH形式での書き出し
+  <a href="#_4" class="md-nav__link">
+    ファイルへの保存・利用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    受信プログラムの作成
   </a>
   
 </li>
@@ -906,7 +913,7 @@
                 <h1 id="mocapforall">MocapForAllって何？</h1>
 <h2 id="_1">万人のためのモーションキャプチャシステム</h2>
 <p><img alt="" loading="lazy" src="images/App-Demo.gif" /></p>
-<h4 id="_2">特別な装置不要</h4>
+<h3 id="_2">特別な装置不要</h3>
 <p>下記のものがあれば、人の動きをキャプチャすることができます。</p>
 <ul>
 <li>ミドルクラスのPC</li>
@@ -914,24 +921,24 @@
 <li>2.5m x 2.5mくらいの空間</li>
 </ul>
 <p>ウェブカメラはウェブ会議で使用するような一般的なものを使用できます。またスマートフォンやタブレットをウェブカメラ化するアプリを利用することもできます。</p>
-<h4 id="pc">ミドルクラスのPCでリアルタイム</h4>
+<h3 id="pc">ミドルクラスのPCでリアルタイム</h3>
 <p>例えば、専用のGPUを持たない Surface Pro 7 で 17fps前後、GTX1080Ti なら 30～60fpsで動作させることができます。</p>
-<h4 id="_3">安い</h4>
+<h3 id="_3">安い</h3>
 <p>予算が限られているインディーズでの製作活動、教育目的や社内での利用などに選択肢として加えることができます。   </p>
 <h2 id="mocapforall_1">MocapForAllでできること</h2>
 <ul>
 <li>キャプチャ結果をVMTプロトコル(※1) および <a href="https://protocol.vmc.info/">VMCプロトコル</a>(※2) でネットワーク上に(※3)リアルタイムで出力することができます。</li>
-<li>キャプチャ結果をBVH形式のファイルに保存することができます。</li>
+<li>キャプチャ結果をBVH形式およびFBX形式のファイルに保存することができます。</li>
 <li>キャプチャ結果を共有メモリにリアルタイムで出力することができます。</li>
 </ul>
+<p><img alt="" loading="lazy" src="images/App-Overview.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>※1 ここでの「VMTプロトコル」とは、<a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/">Virtual Motion Tracker</a> の通信で使用されるメッセージのフォーマットを指します。Virtual Motion Trackerの公式HPでは「VMTプロトコル」という呼称は用いられていませんが、MocapForAllでは便宜上「VMTプロトコル」という呼称を使用しています。  </p>
 <p>※2 VMCプロトコルは、<a href="https://vmc.info/">VirtualMotionCapture</a>に代表されるアプリケーションでの通信に用いられるメッセージのフォーマットです。MocapForAllを含むVMCプロトコルに対応したその他のアプリケーション間での通信には、VirtualMotionCaptureそれ自体は必須ではないことに注意してください。</p>
 <p>※3 VMTプロトコルもVMCプロトコルも、UDP/OpenSound Controlにより通信を行います。</p>
 </div>
-<p>これらにより下記に述べるような利用が可能であるとともに、いずれの出力仕様も公開されたものであるため、自身で受信側のプログラムを製作することも可能です。</p>
-<p><img alt="" loading="lazy" src="images/App-Overview.png" /></p>
+<p>これらにより下記に述べるような利用が可能です。</p>
 <h3 id="virtual-motion-trackersteamvr">Virtual Motion TrackerによるSteamVR連携</h3>
 <p><a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/">Virtual Motion Tracker</a>を介して、キャプチャ結果を仮想トラッカーとしてSteamVRで動作するアプリケーションで使うことができます。</p>
 <h3 id="ue4-ue5-unity">UE4, UE5, Unityへのデータ連携</h3>
@@ -944,14 +951,16 @@
 <h3 id="vmc">VMCプロトコルによるアプリ連携</h3>
 <p>VMCプロトコルを用いて、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。</p>
 <ul>
+<li><a href="https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity">EVMC4U</a>を使った、Unityへのボーンと表情モーフの送信</li>
+<li><a href="https://github.com/HAL9HARUKU/VMC4UE">VMC4UE</a>を使った、Unreal Engineへのボーンと表情モーフの送信</li>
+<li><a href="https://tonimono.booth.pm/items/3432915">VMC4B</a>を使った、Blenderへのボーンの送信</li>
 <li><a href="https://www.vseeface.icu/">VSeeFace</a>へのボーンの送信、VSeeFaceからの表情モーフの受信</li>
-<li><a href="https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity">EVMC4U</a>へのボーンと表情モーフの送信</li>
-<li><a href="https://github.com/HAL9HARUKU/VMC4UE">VMC4UE</a>へのボーンと表情モーフの送信</li>
-<li><a href="https://tonimono.booth.pm/items/3432915">VMC4B</a>へのボーンの送信</li>
 <li><a href="https://vmc.info/">VirtualMotionCapture</a>へのトラッカーの送信</li>
 </ul>
-<h3 id="bvh">BVH形式での書き出し</h3>
-<p>BVH形式ファイルでキャプチャ結果を保存することができます。Blender等で利用できます。</p>
+<h3 id="_4">ファイルへの保存・利用</h3>
+<p>BVH形式およびFBX形式のファイルでキャプチャ結果のアニメーションを保存することができます。Blender等で利用できます。</p>
+<h3 id="_5">受信プログラムの作成</h3>
+<p>FBXを除いて、出力仕様はいずれも公開されたものであるため、自身で受信側のプログラムを製作することも可能です。</p>
                 
               
               

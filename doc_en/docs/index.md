@@ -1,8 +1,8 @@
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-![](images/App-Demo.gif){ loading=lazy }
 
+![](images/App-Demo.gif){ loading=lazy }
 
 ### No special equipment required
 
@@ -15,17 +15,23 @@ You can capture human motion if you have the followings:
 You can use regular webcams like the ones used in video conferences. You can also use apps that turns your smartphones or tablets into webcams.
 
 ### Realtime with a middle range PC
+
 For examples, it runs at 
 
 - around 17 fps on Surface Pro 7 which does not have a dedicated GPU
 - 30 to 60 fps on GTX 1080 Ti
 
 ### Cheap
+
 An option for projects with limited budgets, such as indie games, indie films, or education.
+
 ## What you can do with MocapForAll
+
 - You can output captured motion to the network(\*1) via VMT protocol(\*2) and [VMC protocol](https://protocol.vmc.info/english)(\*3) in real time. 
-- You can save the captured motion to files in BVH format.
+- You can save the captured motion to files in BVH format and FBX format.
 - You can output captured motion to the shared memory in real time.
+
+![](images/App-Overview.png){ loading=lazy }
 
 !!! Note
     (\*1) Both VMT protocol and VMC protocol use UDP/OpenSound Control.
@@ -34,11 +40,10 @@ An option for projects with limited budgets, such as indie games, indie films, o
 
     (\*3) "VMC protocol" is a message format used for communication between applications such as [VirtualMotionCapture](https://vmc.info/). Note that VirtualMotionCapture itself is not required for other compatible apps to communicate with each other using VMC protocol.
 
-By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
-
-![](images/App-Overview.png){ loading=lazy }
+These allow you to do the followings:
 
 ### Use in SteamVR via Virtual Motion Tracker
+
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.
 
 ### Use in Unreal Engine4, Unreal Engine5, Unity
@@ -53,12 +58,16 @@ You can send the captured motion to Unreal Engine4, Unreal Engine5, or Unity for
 
 You can send the captured motion to various applications via the VMC protocol. The following are confirmed to work:
 
-- Sending tracker to [VirtualMotionCapture](https://vmc.info/)
+- Sending bones and facial expression morphs to Unity using [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)
+- Sending bones and facial expression morphs to Unreal Engine using [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)
+- Sending bones to Blender using [VMC4B](https://tonimono.booth.pm/items/3432915)
 - Sending bones to [VSeeFace](https://www.vseeface.icu/), and receiving facial expression morphs from VSeeFace
-- Sending bones and facial expression morphs to [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)
-- Sending bones and facial expression morphs to [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)
-- Sending bones to [VMC4B](https://tonimono.booth.pm/items/3432915)
+- Sending tracker to [VirtualMotionCapture](https://vmc.info/)
 
-### Export in BVH format
+### Save animations to files
 
-You can save the captured motion as BVH files. It can be used with Blender etc.
+You can save the captured motion as BVH files and FBX files. It can be used with Blender etc.
+
+### Create programs to receive data
+
+As the output specifications are open to public (except for FBX), you can even create your own programs to receive data from MocapForAll.

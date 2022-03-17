@@ -373,8 +373,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-in-bvh-format" class="md-nav__link">
-    Export in BVH format
+  <a href="#save-animations-to-files" class="md-nav__link">
+    Save animations to files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-programs-to-receive-data" class="md-nav__link">
+    Create programs to receive data
   </a>
   
 </li>
@@ -939,17 +946,17 @@
 <h2 id="what-you-can-do-with-mocapforall">What you can do with MocapForAll</h2>
 <ul>
 <li>You can output captured motion to the network(*1) via VMT protocol(*2) and <a href="https://protocol.vmc.info/english">VMC protocol</a>(*3) in real time. </li>
-<li>You can save the captured motion to files in BVH format.</li>
+<li>You can save the captured motion to files in BVH format and FBX format.</li>
 <li>You can output captured motion to the shared memory in real time.</li>
 </ul>
+<p><img alt="" loading="lazy" src="images/App-Overview.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>(*1) Both VMT protocol and VMC protocol use UDP/OpenSound Control.</p>
 <p>(*2) "VMT protocol" here refers to the <a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/api/#osc-protocol-osc">message format</a> used in the communication of <a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/">Virtual Motion Tracker</a>. The official HP of Virtual Motion Tracker does not use the word "VMT protocol", but MocapForAll uses the word "VMT protocol" for convenience.  </p>
 <p>(*3) "VMC protocol" is a message format used for communication between applications such as <a href="https://vmc.info/">VirtualMotionCapture</a>. Note that VirtualMotionCapture itself is not required for other compatible apps to communicate with each other using VMC protocol.</p>
 </div>
-<p>By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.</p>
-<p><img alt="" loading="lazy" src="images/App-Overview.png" /></p>
+<p>These allow you to do the followings:</p>
 <h3 id="use-in-steamvr-via-virtual-motion-tracker">Use in SteamVR via Virtual Motion Tracker</h3>
 <p>Through <a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/">Virtual Motion Tracker</a>, the capture motion can be used as virtual trackers in applications running on SteamVR.</p>
 <h3 id="use-in-unreal-engine4-unreal-engine5-unity">Use in Unreal Engine4, Unreal Engine5, Unity</h3>
@@ -962,14 +969,16 @@
 <h3 id="use-in-other-apps-via-vmc-protocol">Use in other apps via VMC protocol</h3>
 <p>You can send the captured motion to various applications via the VMC protocol. The following are confirmed to work:</p>
 <ul>
-<li>Sending tracker to <a href="https://vmc.info/">VirtualMotionCapture</a></li>
+<li>Sending bones and facial expression morphs to Unity using <a href="https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity">EVMC4U</a></li>
+<li>Sending bones and facial expression morphs to Unreal Engine using <a href="https://github.com/HAL9HARUKU/VMC4UE">VMC4UE</a></li>
+<li>Sending bones to Blender using <a href="https://tonimono.booth.pm/items/3432915">VMC4B</a></li>
 <li>Sending bones to <a href="https://www.vseeface.icu/">VSeeFace</a>, and receiving facial expression morphs from VSeeFace</li>
-<li>Sending bones and facial expression morphs to <a href="https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity">EVMC4U</a></li>
-<li>Sending bones and facial expression morphs to <a href="https://github.com/HAL9HARUKU/VMC4UE">VMC4UE</a></li>
-<li>Sending bones to <a href="https://tonimono.booth.pm/items/3432915">VMC4B</a></li>
+<li>Sending tracker to <a href="https://vmc.info/">VirtualMotionCapture</a></li>
 </ul>
-<h3 id="export-in-bvh-format">Export in BVH format</h3>
-<p>You can save the captured motion as BVH files. It can be used with Blender etc.</p>
+<h3 id="save-animations-to-files">Save animations to files</h3>
+<p>You can save the captured motion as BVH files and FBX files. It can be used with Blender etc.</p>
+<h3 id="create-programs-to-receive-data">Create programs to receive data</h3>
+<p>As the output specifications are open to public (except for FBX), you can even create your own programs to receive data from MocapForAll.</p>
                 
               
               
