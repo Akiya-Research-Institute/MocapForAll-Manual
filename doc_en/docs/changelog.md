@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.17.0 (10 May 2022)
+- Fixed a bug that the last camera does not work properly in "Precision mode" when using an odd number of cameras.
+
 ## v1.16.0 (13 Mar. 2022)
 - Added UE Mannequin characters.
 - Added a function to export motion data as a FBX file.

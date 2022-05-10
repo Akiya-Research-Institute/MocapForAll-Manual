@@ -6,6 +6,10 @@ From v1.12, you can capture motion using recorded videos.
 
 - Select `Recorded video` from the `▼` next to `Add camera` at the top of the MocapForAll window.   
 - Press the `...` button and select the video file.  
+
+    !!! Warning "Do not use multi-byte characters"
+        If the file path contains multi-byte characters (e.g. Japanese hiragana), the video file may fail to open.
+
 - After that, the usage is basically the same as a normal webcam.
 
 ## Playback positions
