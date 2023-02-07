@@ -63,7 +63,7 @@ extra:
     provider: google
     property: UA-2709176-10
   social:
-    - icon: fontawesome/solid/home
+    - icon: material/home
       link: https://vrlab.akiya-souken.co.jp/
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
@@ -75,7 +75,7 @@ extra:
       link: https://github.com/Akiya-Research-Institute
     - icon: fontawesome/brands/steam
       link: https://store.steampowered.com/app/1759710/MocapForAll/
-    - icon: fontawesome/solid/store-alt
+    - icon: material/store
       link: https://akiya-souken.booth.pm/
 
     # - icon: images/logo.png

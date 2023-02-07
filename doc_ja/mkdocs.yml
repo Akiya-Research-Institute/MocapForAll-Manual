@@ -61,7 +61,7 @@ extra:
     provider: google
     property: UA-2709176-10
   social:
-    - icon: fontawesome/solid/home
+    - icon: material/home
       link: https://vrlab.akiya-souken.co.jp/
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
@@ -73,7 +73,7 @@ extra:
       link: https://github.com/Akiya-Research-Institute
     - icon: fontawesome/brands/steam
       link: https://store.steampowered.com/app/1759710/MocapForAll/
-    - icon: fontawesome/solid/store-alt
+    - icon: material/store
       link: https://akiya-souken.booth.pm/
   # generator: false
 
@@ -106,6 +106,7 @@ nav:
       - how-to-capture/adjust-settings/adjust-animation.md
       - how-to-capture/adjust-settings/optimize-performance.md
   - エクスポート方法:
+    - how-to-export/to-vrchat-osc.md
     - how-to-export/to-steamvr.md
     - how-to-export/to-game-engines.md
     - how-to-export/to-vmc-marionette.md

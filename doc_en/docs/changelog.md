@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.18.1 (7 Feb 2023)
+- Added a funtion to [send tracking positions to VRChat as OSC Tracker](../how-to-export/to-vrchat-osc).
+
 ## v1.17.0 (10 May 2022)
 - Fixed a bug that the last camera does not work properly in "Precision mode" when using an odd number of cameras.
 
@@ -50,7 +53,7 @@
 - Fixed a bug that "Align coord to VR" button always appears when the app launched.
 
 ## v1.10 (4 Sep. 2021)
-- Added a function to [automatically align the coordinates of SteamVR and MocapForAll](http://localhost:8000/MocapForAll-Manual/how-to-export/to-steamvr/#align-coordinates-of-steamvr-and-mocapforall).  
+- Added a function to [automatically align the coordinates of SteamVR and MocapForAll](../how-to-export/to-steamvr/#align-coordinates-of-steamvr-and-mocapforall).  
 
 ## v1.9.1 (23 Aug. 2021)
 - Added MetaHuman models of various body types.
